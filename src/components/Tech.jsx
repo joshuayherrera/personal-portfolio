@@ -1,4 +1,4 @@
-import React from 'react'
+import { BallCanvas } from "./canvas"
 
 const Tech = () => {
   return (
