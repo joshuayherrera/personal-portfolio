@@ -69,7 +69,7 @@ Enlace del proyecto: [https://github.com/joshuayherrera/personal-portfolio](http
 
 ## 📜 Licencia
 
-[MIT]([https://choosealicense.com/licenses/mit/](https://github.com/joshuayherrera/personal-portfolio/blob/main/LICENSE))
+[MIT](https://github.com/joshuayherrera/personal-portfolio/blob/main/LICENSE)
 
 ---
 
