@@ -8,14 +8,50 @@ import { slideIn } from "../utils/motion"
 
 const Contact = () => {
   const formRef = useRef();
+
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: ''
   });
+
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const {name, value} = target
+    setForm({...form, [name]:value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      "service_er6s3zf",
+      "template_bt3xgkb",
+      {
+        from_name: form.name,
+        to_name : "Joshua",
+        from_email: form.email,
+        to_email : "joshuayherrera@gmail.com",
+        message: form.message
+      },
+      "KOYDIJU2PnU11DbiS")
+      .then(() => {
+        setLoading(false);
+        alert("Thank you, I will get back to you as soon as possible")
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        })
+      }, (error) => {
+        setLoading(false)
+        console.log(error)
+        alert("Something went wrong")
+      })
+  }
 
 
   return (
@@ -82,6 +118,13 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+      </motion.div>
+
+      <motion.div
+        variants={slideIn("right", "tween", 0.2 , 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <EarthCanvas />
       </motion.div>
     </div>
   )
