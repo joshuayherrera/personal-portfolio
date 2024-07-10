@@ -6,7 +6,7 @@ import { div } from "three/examples/jsm/nodes/Nodes.js"
 
 const Stars = (props) => {
   const ref = useRef();
-  const sphere = random.inSphere(new Float32Array(5000), 
+  const sphere = random.inSphere(new Float32Array(6000), 
   { radius: 1.2 })
 
   useFrame((state, delta) => {

@@ -8,7 +8,6 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
@@ -16,13 +15,12 @@ import {
     figma,
     docker,
     joyit,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    python,
+    huggingface
     
   } from "../assets";
   
@@ -47,12 +45,12 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
       title: "Backend Developer",
       icon: backend,
+    },
+    {
+      title: "React Native Developer",
+      icon: mobile,
     },
     {
       title: "AI Developer",
@@ -78,12 +76,12 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "Python",
+      icon: python
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "React JS",
+      icon: reactjs,
     },
     {
       name: "Tailwind CSS",
@@ -113,6 +111,10 @@ import {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "Hugging Face",
+      icon: huggingface,
+    }
   ];
   
   const experiences = [
@@ -134,27 +136,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "I thought it was impossible to work with someone really productive, is great!.",
+      name: "Daniel Arotoma",
+      designation: "Software Engineer",
+      company: "JoyIt",
+      image: "https://randomuser.me/api/portraits/men/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "I've never met a web developer who truly cares about their clients' success like Joshua does.",
+      name: "Jennifer Rodriguez",
+      designation: "Data scientist",
+      company: "JoyIt",
+      image: "https://randomuser.me/api/portraits/women/8.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "After Joshua optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      name: "Giacomo Rojas",
       designation: "CTO",
       company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      image: "https://randomuser.me/api/portraits/men/6.jpg",
     },
   ];
   
