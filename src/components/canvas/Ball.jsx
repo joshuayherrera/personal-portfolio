@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import {
   Decal,
   Float,
@@ -12,12 +12,22 @@ import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+  const meshRef = useRef();
+
+  useFrame((state) => {
+    const time = state.clock.getElapsedTime();
+    meshRef.current.position.y = Math.sin(time) * 0.1;
+    meshRef.current.rotation.x = Math.cos(time * 0.5) * 0.1;
+    meshRef.current.rotation.z = Math.sin(time * 0.3) * 0.1;
+  });
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+    <Float 
+      speed={2} 
+      rotationIntensity={2} 
+      floatIntensity={4}
+    >
+      <mesh ref={meshRef} castShadow receiveShadow scale={1.65}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color='#fff8eb'
@@ -40,15 +50,17 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      camera={{ position: [0, 0, 5], fov: 45 }}
     >
+      <ambientLight intensity={0.6} />
+      <directionalLight position={[8, 8, 5]} intensity={2} />
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
