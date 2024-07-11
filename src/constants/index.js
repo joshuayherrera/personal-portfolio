@@ -12,7 +12,6 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
     joyit,
     carrent,
@@ -102,10 +101,6 @@ import {
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
     },
     {
       name: "docker",
