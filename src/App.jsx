@@ -1,23 +1,36 @@
 import { BrowserRouter } from "react-router-dom";
-
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { useEffect, useRef } from 'react';
+import { About, Contact ,Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
 const App = () => {
+  const wrapperRef = useRef(null);
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
+        <Navbar />
+        <div className='wrapper' ref={wrapperRef}>
+          <div id="hero" className='z-10'>
+            <Hero scrollContainer={wrapperRef} />
+          </div>
+          <div id="about" className='relative z-30 bg-primary mt-[-2px]'>
+            <About />
+          </div>
+          <div id="work" className='relative z-30 bg-primary'>
+            <Experience />
+          </div>
+          <div id="tech" className='relative z-30 bg-primary'>
+            <Tech/>
+          </div>
+          <div id="project" className='relative z-30 bg-primary'>
+            <Works/>
+          </div>
+          <div id="feedbacks" className='relative z-30 bg-primary'>
+            <Feedbacks />
+          </div>
+          <div id="contact" className='relative z-30 bg-primary'>
+            <Contact />
+            <StarsCanvas />
+          </div>
         </div>
       </div>
     </BrowserRouter>

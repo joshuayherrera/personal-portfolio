@@ -14,9 +14,9 @@ import {
     git,
     docker,
     joyit,
-    carrent,
-    jobit,
-    tripguide,
+    portfolio,
+    gemini,
+    rapidgo,
     threejs,
     python,
     huggingface
@@ -31,6 +31,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "project",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -48,13 +52,14 @@ import {
       icon: backend,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
       title: "AI Developer",
       icon: creator,
     },
+    {
+      title: "Programmer Analyst",
+      icon: mobile,
+    },
+    
   ];
   
   const technologies = [
@@ -131,7 +136,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to work with someone really productive, is great!.",
+        "Joshua's productivity is unmatched. Working with him has been a game-changer for our team!",
       name: "Daniel Arotoma",
       designation: "Software Engineer",
       company: "JoyIt",
@@ -157,66 +162,82 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Personal Portfolio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The Gemini Clone project is a comprehensive recreation of the original Gemini application. This project involves replicating the core functionalities and design of the Gemini application, ensuring a high level of fidelity to the original.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
-          color: "pink-text-gradient",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "teal-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "threejs",
+          color: "brown-text-gradient",
         },
       ],
-      image: tripguide,
+      image: portfolio,
+      source_code_link: "https://github.com/joshuayherrera/personal-portfolio",
+    },
+    {
+      name: "Gemini AI",
+      description:
+        "The Gemini Clone project is a comprehensive recreation of the original Gemini application. This project involves replicating the core functionalities and design of the Gemini application, ensuring a high level of fidelity to the original.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "api integration",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: gemini,
+      source_code_link: "https://github.com/joshuayherrera/gemini-clone",
+    },
+    {
+      name: "RapidGo - Building...",
+      description:
+        "RapidGo is a sophisticated real-time food ordering system designed to streamline the process of placing and managing food orders. It enables users to browse menus, customize orders, and receive updates on their order status in real-time.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "teal-text-gradient",
+        },
+        {
+          name: "shadcn",
+          color: "brown-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "cyan-text-gradient",
+        }
+      ],
+      image: rapidgo,
       source_code_link: "https://github.com/",
     },
   ];
