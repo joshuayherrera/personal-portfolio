@@ -164,7 +164,7 @@ import {
     {
       name: "Personal Portfolio",
       description:
-        "The Gemini Clone project is a comprehensive recreation of the original Gemini application. This project involves replicating the core functionalities and design of the Gemini application, ensuring a high level of fidelity to the original.",
+        "My personal portfolio is a presentation of myself, my skills, and my projects. It is a showcase of my work and a platform for me to connect with potential clients and collaborators.💻",
       tags: [
         {
           name: "react",

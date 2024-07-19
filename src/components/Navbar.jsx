@@ -92,7 +92,7 @@ const Navbar = () => {
                     window.open("/personal-portfolio/Joshua_Alvarez_CV.pdf", "_blank");
                   }}
                 >
-                  Descargar CV
+                  Download CV
                 </a>
               </li>
         </ul>
@@ -132,7 +132,7 @@ const Navbar = () => {
                     window.open("/personal-portfolio/Joshua_Alvarez_CV.pdf", "_blank");
                   }}
                 >
-                  Descargar CV
+                  Download CV
                 </a>
               </li>
             </ul>
