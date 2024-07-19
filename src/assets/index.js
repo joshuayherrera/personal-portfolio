@@ -23,9 +23,9 @@ import huggingface from "./tech/huggingface-2.svg";
 
 import joyit from "./company/joyit.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import portfolio from "./portfolio.png";
+import gemini from "./gemini-clone.png";
+import rapidgo from "./rapidgo.jpg";
 
 export {
   logo,
@@ -48,9 +48,9 @@ export {
   typescript,
   threejs,
   joyit,
-  carrent,
-  jobit,
-  tripguide,
+  portfolio,
+  gemini,
+  rapidgo,
   python,
   huggingface
 };
