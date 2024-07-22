@@ -5,8 +5,8 @@ import {
     web,
     javascript,
     typescript,
-    html,
-    css,
+    nextjs,
+    motion,
     reactjs,
     tailwind,
     nodejs,
@@ -17,9 +17,10 @@ import {
     portfolio,
     gemini,
     rapidgo,
+    stunning,
     threejs,
     python,
-    huggingface
+    mysql,
     
   } from "../assets";
   
@@ -28,10 +29,12 @@ import {
       id: "about",
       title: "About",
     },
-    {
-      id: "work",
-      title: "Work",
-    },
+    /*
+      {
+        id: "work",
+        title: "Work",
+      },
+    */
     {
       id: "project",
       title: "Projects",
@@ -64,12 +67,24 @@ import {
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "NextJs",
+      icon: nextjs,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Three JS",
+      icon: threejs,
+    },
+    {
+      name: "Motion",
+      icon: motion,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
     },
     {
       name: "JavaScript",
@@ -84,14 +99,6 @@ import {
       icon: python
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
     },
@@ -100,8 +107,8 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "MySql",
+      icon: mysql,
     },
     {
       name: "git",
@@ -111,10 +118,7 @@ import {
       name: "docker",
       icon: docker,
     },
-    {
-      name: "Hugging Face",
-      icon: huggingface,
-    }
+   
   ];
   
   const experiences = [
@@ -162,6 +166,55 @@ import {
   
   const projects = [
     {
+      name: "Stunning",
+      description:
+        "Stunning is a landing page template designed to showcase a SaaS product. It is built with React, Tailwind CSS, and Next.js. The project features smooth animations and transitions, making it visually appealing and engaging.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "teal-text-gradient",
+        },
+        {
+          name: "nextjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "motion",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: stunning,
+      source_code_link: "https://github.com/joshuayherrera/stunning-saas-landing-page",
+      deployed_url: "https://joshuayherrera.github.io/stunning-saas-landing-page/",
+    },
+    
+    {
+      name: "Gemini AI",
+      description:
+        "The Gemini Clone project is a comprehensive recreation of the original Gemini application. This project involves replicating the core functionalities and design of the Gemini application, ensuring a high level of fidelity to the original.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "api integration",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: gemini,
+      source_code_link: "https://github.com/joshuayherrera/gemini-clone",
+      deployed_url: "https://joshuayherrera.github.io/gemini-clone/"
+    },
+    {
       name: "Personal Portfolio",
       description:
         "My personal portfolio is a presentation of myself, my skills, and my projects. It is a showcase of my work and a platform for me to connect with potential clients and collaborators.💻",
@@ -189,27 +242,7 @@ import {
       ],
       image: portfolio,
       source_code_link: "https://github.com/joshuayherrera/personal-portfolio",
-    },
-    {
-      name: "Gemini AI",
-      description:
-        "The Gemini Clone project is a comprehensive recreation of the original Gemini application. This project involves replicating the core functionalities and design of the Gemini application, ensuring a high level of fidelity to the original.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "css",
-          color: "green-text-gradient",
-        },
-        {
-          name: "api integration",
-          color: "yellow-text-gradient",
-        },
-      ],
-      image: gemini,
-      source_code_link: "https://github.com/joshuayherrera/gemini-clone",
+      deployed_url: "https://joshuayherrera.github.io/personal-portfolio/"
     },
     {
       name: "RapidGo - Building...",
@@ -238,7 +271,8 @@ import {
         }
       ],
       image: rapidgo,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/joshuayherrera",
+      deployed_url: "https://github.com/joshuayherrera"
     },
   ];
   

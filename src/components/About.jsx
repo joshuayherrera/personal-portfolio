@@ -44,12 +44,13 @@ const About = () => {
         variants={fadeIn("","", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        As a dedicated software engineer specializing in AI applications, 
-        I bring a blend of technical expertise and a passion for innovation.
-        My journey in technology began with comprehensive training at Senati
-        in Peru, followed by advanced courses from Simplilearn. 
-        I have honed my skills in Python, JavaScript, React, and TailwindCSS, 
-        enabling me to tackle complex projects and deliver high-quality solutions.
+        As a skilled Frontend Developer with 2 years of experience, 
+        I have a solid foundation from Senati and advanced training 
+        from Simplilearn. My expertise in Python, JavaScript, React, 
+        and TailwindCSS allows me to deliver sophisticated, 
+        high-quality web applications. Driven by a passion for innovation 
+        and continuous learning, I consistently provide cutting-edge, 
+        user-centric solutions.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

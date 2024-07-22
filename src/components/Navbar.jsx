@@ -67,7 +67,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-col gap-5'>
+        <ul className='list-none hidden sm:flex flex-col gap-5 -mx-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -86,7 +86,7 @@ const Navbar = () => {
                 <a
                   href="/Joshua_Alvarez_CV.pdf"
                   download="Joshua_Alvarez_CV.pdf"
-                  className="bg-gray-500 text-white py-2 px-4 rounded cursor-pointer hover:bg-gray-600 transition-colors duration-300"
+                  className="bg-slate-500 text-white py-2 px-4 rounded cursor-pointer hover:bg-gray-600 transition-colors duration-300"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open("/personal-portfolio/Joshua_Alvarez_CV.pdf", "_blank");
@@ -126,7 +126,7 @@ const Navbar = () => {
                 <a
                   href="/Joshua_Alvarez_CV.pdf"
                   download="Joshua_Alvarez_CV.pdf"
-                  className="bg-gray-500 text-white py-2 px-4 rounded cursor-pointer hover:bg-gray-600 transition-colors duration-300"
+                  className="bg-transparent text-white py-2 px-4 rounded cursor-pointer hover:bg-secondary transition-colors duration-300"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open("/personal-portfolio/Joshua_Alvarez_CV.pdf", "_blank");
