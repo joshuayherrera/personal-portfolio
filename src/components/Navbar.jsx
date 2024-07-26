@@ -89,7 +89,7 @@ const Navbar = () => {
                   className="bg-slate-500 text-white py-2 px-4 rounded cursor-pointer hover:bg-gray-600 transition-colors duration-300"
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open("/personal-portfolio/Joshua_Alvarez_CV.pdf", "_blank");
+                    window.open("/Joshua_Alvarez_CV.pdf", "_blank");
                   }}
                 >
                   Download CV
@@ -129,7 +129,7 @@ const Navbar = () => {
                   className="bg-transparent text-white py-2 px-4 rounded cursor-pointer hover:bg-secondary transition-colors duration-300"
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open("/personal-portfolio/Joshua_Alvarez_CV.pdf", "_blank");
+                    window.open("/Joshua_Alvarez_CV.pdf", "_blank");
                   }}
                 >
                   Download CV
