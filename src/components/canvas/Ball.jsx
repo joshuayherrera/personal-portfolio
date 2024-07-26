@@ -8,26 +8,29 @@ import {
   useTexture,
 } from "@react-three/drei";
 import CanvasLoader from "../Loader";
+import { isMobile } from 'react-device-detect';
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
   const meshRef = useRef();
 
   useFrame((state) => {
-    const time = state.clock.getElapsedTime();
-    meshRef.current.position.y = Math.sin(time) * 0.1;
-    meshRef.current.rotation.x = Math.cos(time * 0.5) * 0.1;
-    meshRef.current.rotation.z = Math.sin(time * 0.3) * 0.1;
+    if (!isMobile) {
+      const time = state.clock.getElapsedTime();
+      meshRef.current.position.y = Math.sin(time) * 0.1;
+      meshRef.current.rotation.x = Math.cos(time * 0.5) * 0.1;
+      meshRef.current.rotation.z = Math.sin(time * 0.3) * 0.1;
+    }
   });
 
   return (
     <Float 
-      speed={2} 
-      rotationIntensity={2} 
-      floatIntensity={4}
+      speed={isMobile ? 1 : 2} 
+      rotationIntensity={isMobile ? 1 : 2} 
+      floatIntensity={isMobile ? 2 : 4}
     >
-      <mesh ref={meshRef} castShadow receiveShadow scale={1.65}>
-        <icosahedronGeometry args={[1, 1]} />
+      <mesh ref={meshRef} castShadow receiveShadow scale={isMobile ? 1.2 : 1.65}>
+        <icosahedronGeometry args={[1, isMobile ? 0 : 1]} />
         <meshStandardMaterial
           color='#fff8eb'
           polygonOffset
@@ -49,8 +52,8 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameloop='always'
-      dpr={[1, 2]}
+      frameloop={isMobile ? 'demand' : 'always'}
+      dpr={[1, isMobile ? 1 : 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{ position: [0, 0, 5], fov: 45 }}
     >

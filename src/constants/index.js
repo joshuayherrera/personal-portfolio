@@ -242,7 +242,7 @@ import {
       ],
       image: portfolio,
       source_code_link: "https://github.com/joshuayherrera/personal-portfolio",
-      deployed_url: "https://joshuayherrera.github.io/personal-portfolio/"
+      deployed_url: "https://joshuaherrera.net/"
     },
     {
       name: "RapidGo - Building...",
